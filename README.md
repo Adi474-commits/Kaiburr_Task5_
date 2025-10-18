@@ -2,19 +2,13 @@
 
 A comprehensive machine learning project for multi-class text classification of consumer complaints into categories: Credit reporting/repair, Debt collection, Consumer Loan, and Mortgage.
 
-## 📋 Table of Contents
-- [Project Overview](#project-overview)
-- [Dataset](#dataset)
-- [Installation](#installation)
-- [Project Structure](#project-structure)
-- [Usage](#usage)
-- [Methodology](#methodology)
-- [Model Performance](#model-performance)
-- [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
+## Author
+Adithya N Reddy
+BL.EN.U4EAC22075
+adithyasnr@gmail.com
 
-## 🎯 Project Overview
+
+##  Project Overview
 
 This project performs text classification on consumer complaint data using Natural Language Processing (NLP) and Machine Learning techniques. The goal is to automatically categorize consumer complaints into one of four categories:
 
@@ -25,7 +19,7 @@ This project performs text classification on consumer complaint data using Natur
 | 2 | Consumer Loan |
 | 3 | Mortgage |
 
-## 📊 Dataset
+##  Dataset
 
 **Source**: [Consumer Complaint Database](https://catalog.data.gov/dataset/consumer-complaint-database)
 
@@ -37,7 +31,7 @@ The dataset contains consumer complaints submitted to the Consumer Financial Pro
 - Issue type
 - And more...
 
-## 🔧 Installation
+##  Installation
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -72,7 +66,7 @@ pip install -r requirements.txt
 python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords'); nltk.download('wordnet')"
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Task_5/
@@ -110,7 +104,7 @@ Task_5/
 └── README.md
 ```
 
-## 🚀 Usage
+##  Usage
 
 ### 1. Exploratory Data Analysis
 Explore the dataset and understand the distribution:
@@ -146,7 +140,7 @@ print(f"Category: {prediction['category']}")
 print(f"Confidence: {prediction['confidence']:.2%}")
 ```
 
-## 🔬 Methodology
+##  Methodology
 
 ### Step 1: Exploratory Data Analysis and Feature Engineering
 - Load and inspect the dataset
@@ -198,7 +192,7 @@ Comprehensive evaluation including:
 - Generate predictions with confidence scores
 - Provide category labels
 
-## 📈 Model Performance
+##  Model Performance
 
 After training on 6,265 consumer complaints across 4 categories, here are the performance metrics:
 
@@ -210,7 +204,7 @@ After training on 6,265 consumer complaints across 4 categories, here are the pe
 | Random Forest | 85.08% | 0.8557 | 0.8508 | 0.8485 | 6.01 |
 | Naive Bayes | 83.40% | 0.8359 | 0.8340 | 0.8315 | 0.01 |
 
-### 🏆 Best Model: Support Vector Machine (SVM)
+###  Best Model: Support Vector Machine (SVM)
 
 The **SVM model** achieved the highest F1-Score of **0.8666** with excellent balance between precision and recall across all categories. Detailed classification report:
 
@@ -222,7 +216,7 @@ The **SVM model** achieved the highest F1-Score of **0.8666** with excellent bal
 | Mortgage | 0.9583 | 0.8915 | 0.9237 | 129 |
 | **Weighted Avg** | **0.8678** | **0.8667** | **0.8666** | **1,253** |
 
-### 📊 Dataset Distribution
+### Dataset Distribution
 
 The training dataset consisted of:
 - **Credit reporting, repair, or other**: 3,096 complaints (49.4%)
@@ -230,12 +224,16 @@ The training dataset consisted of:
 - **Consumer Loan**: 561 complaints (9.0%)
 - **Mortgage**: 645 complaints (10.3%)
 
-## 🎨 Results & Visualizations
+##  Results & Visualizations
+
+<img width="475" height="183" alt="Screenshot 2025-10-18 114902" src="https://github.com/user-attachments/assets/447941bb-3df0-4c57-bffd-e163326deda8" />
+
 
 ### 1. Category Distribution
 
 <!-- Paste category distribution image here -->
-![Category Distribution](results/figures/01_category_distribution.png)
+![Category Distribution]<img width="4530" height="1772" alt="01_category_distribution" src="https://github.com/user-attachments/assets/3446c90e-e6cf-432b-9e92-d829a8e247ce" />
+
 
 The bar chart and pie chart show the distribution of complaints across the four categories. Credit reporting complaints dominate the dataset at nearly 50%, followed by debt collection at 31.3%. Consumer loans and mortgage complaints make up the remaining ~20% of the dataset.
 
@@ -244,7 +242,8 @@ The bar chart and pie chart show the distribution of complaints across the four 
 ### 2. Word Clouds by Category
 
 <!-- Paste word clouds image here -->
-![Word Clouds](results/figures/02_wordclouds.png)
+![Word Clouds]<img width="5970" height="4074" alt="02_wordclouds" src="https://github.com/user-attachments/assets/163e263f-5921-474b-a266-4d2f0e4a9289" />
+
 
 Word clouds for each complaint category reveal the most frequent terms:
 - **Credit reporting**: Terms like "credit", "report", "account", "information", "bureau" are prominent
@@ -259,7 +258,8 @@ These visualizations help identify key distinguishing features between complaint
 ### 3. Model Performance Comparison
 
 <!-- Paste model comparison chart image here -->
-![Model Comparison](results/figures/03_model_comparison.png)
+![Model Comparison]<img width="4170" height="2074" alt="03_model_comparison" src="https://github.com/user-attachments/assets/3a637c37-ef44-48bc-a1ae-cc08d8cf83ab" />
+
 
 This chart compares all five models across four metrics: Accuracy, Precision, Recall, and F1-Score. The visualization clearly shows:
 - **SVM** (red bars) performs best across all metrics
@@ -272,7 +272,8 @@ This chart compares all five models across four metrics: Accuracy, Precision, Re
 ### 4. Confusion Matrices
 
 <!-- Paste confusion matrices image here -->
-![Confusion Matrices](results/figures/04_confusion_matrices.png)
+![Confusion Matrices]<img width="5983" height="3863" alt="04_confusion_matrices" src="https://github.com/user-attachments/assets/33bb9345-1f0c-46d1-a8df-2232f188b837" />
+
 
 Confusion matrices for all five models reveal classification patterns:
 - **Credit reporting** (Category 0) has the highest prediction accuracy due to larger sample size
@@ -285,34 +286,13 @@ The diagonal values (correct predictions) are highest for SVM, confirming its su
 
 ---
 
-### 📁 Generated Reports
+###  Generated Reports
 
 All detailed reports are available in the `results/reports/` directory:
 - **`model_comparison.csv`**: Complete metrics for all models
 - **`best_model_report.txt`**: Detailed classification report for the best model (SVM)
 
-## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
-## 📝 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- Consumer Financial Protection Bureau (CFPB) for providing the dataset
-- Open-source community for the amazing libraries
-
-## 📧 Contact
-
-For questions or feedback, please open an issue on GitHub.
-
----
-**Note**: This is an educational project for demonstrating text classification techniques. The models should be thoroughly tested before any production use.
