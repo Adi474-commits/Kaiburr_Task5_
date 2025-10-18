@@ -1,0 +1,18 @@
+BEST MODEL: SVM
+======================================================================
+
+Classification Report:
+                                    precision    recall  f1-score   support
+
+Credit reporting, repair, or other     0.8702    0.9095    0.8894       619
+                   Debt collection     0.8703    0.8193    0.8440       393
+                     Consumer Loan     0.7414    0.7679    0.7544       112
+                          Mortgage     0.9583    0.8915    0.9237       129
+
+                          accuracy                         0.8667      1253
+                         macro avg     0.8600    0.8470    0.8529      1253
+                      weighted avg     0.8678    0.8667    0.8666      1253
+
+
+Training Time: 0.79s
+Dataset Size: 6,265 samples
