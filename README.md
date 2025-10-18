@@ -232,7 +232,7 @@ The training dataset consisted of:
 ### 1. Category Distribution
 
 <!-- Paste category distribution image here -->
-![Category Distribution]<img width="4530" height="1772" alt="01_category_distribution" src="https://github.com/user-attachments/assets/3446c90e-e6cf-432b-9e92-d829a8e247ce" />
+<img width="4530" height="1772" alt="01_category_distribution" src="https://github.com/user-attachments/assets/3446c90e-e6cf-432b-9e92-d829a8e247ce" />
 
 
 The bar chart and pie chart show the distribution of complaints across the four categories. Credit reporting complaints dominate the dataset at nearly 50%, followed by debt collection at 31.3%. Consumer loans and mortgage complaints make up the remaining ~20% of the dataset.
@@ -242,7 +242,7 @@ The bar chart and pie chart show the distribution of complaints across the four 
 ### 2. Word Clouds by Category
 
 <!-- Paste word clouds image here -->
-![Word Clouds]<img width="5970" height="4074" alt="02_wordclouds" src="https://github.com/user-attachments/assets/163e263f-5921-474b-a266-4d2f0e4a9289" />
+<img width="5970" height="4074" alt="02_wordclouds" src="https://github.com/user-attachments/assets/163e263f-5921-474b-a266-4d2f0e4a9289" />
 
 
 Word clouds for each complaint category reveal the most frequent terms:
@@ -258,7 +258,7 @@ These visualizations help identify key distinguishing features between complaint
 ### 3. Model Performance Comparison
 
 <!-- Paste model comparison chart image here -->
-![Model Comparison]<img width="4170" height="2074" alt="03_model_comparison" src="https://github.com/user-attachments/assets/3a637c37-ef44-48bc-a1ae-cc08d8cf83ab" />
+<img width="4170" height="2074" alt="03_model_comparison" src="https://github.com/user-attachments/assets/3a637c37-ef44-48bc-a1ae-cc08d8cf83ab" />
 
 
 This chart compares all five models across four metrics: Accuracy, Precision, Recall, and F1-Score. The visualization clearly shows:
@@ -272,7 +272,7 @@ This chart compares all five models across four metrics: Accuracy, Precision, Re
 ### 4. Confusion Matrices
 
 <!-- Paste confusion matrices image here -->
-![Confusion Matrices]<img width="5983" height="3863" alt="04_confusion_matrices" src="https://github.com/user-attachments/assets/33bb9345-1f0c-46d1-a8df-2232f188b837" />
+<img width="5983" height="3863" alt="04_confusion_matrices" src="https://github.com/user-attachments/assets/33bb9345-1f0c-46d1-a8df-2232f188b837" />
 
 
 Confusion matrices for all five models reveal classification patterns:
@@ -291,6 +291,7 @@ The diagonal values (correct predictions) are highest for SVM, confirming its su
 All detailed reports are available in the `results/reports/` directory:
 - **`model_comparison.csv`**: Complete metrics for all models
 - **`best_model_report.txt`**: Detailed classification report for the best model (SVM)
+
 
 
 
